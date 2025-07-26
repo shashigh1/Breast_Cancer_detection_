@@ -36,8 +36,11 @@ if uploaded_file:
     img_array = np.expand_dims(img_array, axis=0)
 
     prediction = model.predict(img_array)
-    class_index = np.argmax(prediction[0])
-    confidence = prediction[0][class_index] * 100
+    probability = prediction[0][0]  # assuming shape is (1, 1)
+
+    class_index = 1 if probability >= 0.5 else 0
+    confidence = probability * 100 if class_index == 1 else (1 - probability) * 100
 
     st.write(f"### 🧾 Prediction: **{class_labels[class_index]}**")
     st.write(f"### 📊 Confidence: **{confidence:.2f}%**")
+    st.write(f"🧪 Raw model output: {prediction[0][0]:.4f}")
