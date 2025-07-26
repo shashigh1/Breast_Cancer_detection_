@@ -1,6 +1,6 @@
 # 🧠 Breast Cancer Detection using VGG16
 
-A deep learning web application to classify breast histopathology images as **Cancer** or **Not Cancer** using a pre-trained VGG16 model.
+A deep learning web application to classify breast histopathology images as **Cancer** or **Not Cancer** with a accuracy of 90 percent using a pre-trained VGG16 model.
 
 ## 🚀 Features
 
