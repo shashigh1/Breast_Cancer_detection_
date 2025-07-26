@@ -17,8 +17,8 @@ model = tf.keras.models.load_model(model_path)
 
 # Define class labels
 class_labels = {
-    1: "Not Cancer",
-    0: "Cancer"
+    0: "Not Cancer",
+    1: "Cancer"
 }
 
 # Streamlit app
