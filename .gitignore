@@ -1,0 +1,23 @@
+# Ignore virtual environment
+venv/
+
+# Ignore model files
+*.keras
+*.h5
+*.pkl
+*.joblib
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
